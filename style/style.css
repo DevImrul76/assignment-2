@@ -17,9 +17,12 @@
 
   .navbar{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px 0px 20px 0px;
     gap: 10;
+    width: 1440px;
+
     
     
   }
@@ -29,6 +32,7 @@
     margin: 0px 186px;
     
   }
+ 
   .nav-heading{
     text-align: center;
     margin-top: 17px;
@@ -43,6 +47,7 @@
     gap: 32px;
     padding: 0px;
     }
+    
    
 
   .btn{
@@ -66,6 +71,7 @@
     text-align: left;
   }
   .ul-container li{
+    
     list-style: none;
     font-size: 20px;
     font-weight: 700;
@@ -77,4 +83,150 @@
     padding: 0px;
 
   }
+  .li-home a{
+    text-decoration: none;
+    color: rgb(254, 163, 1);
+  }
+  .li-about a{
+    text-decoration: none;
+    color: rgb(1, 172, 253);
+  }
+  .li-Facilities a{
+    text-decoration: none;
+    color: rgb(5, 212, 223);
+  }
+  .li-Admission a{
+    text-decoration: none;
+    color: rgb(93, 88, 239);
+  }
+  .humbuger{
+    display: none;
+    width: 30px;
+    
+    
+  }
+
+ .hero-section{
+    display: flex;
+    flex-direction: row;
+    width: 1440px;
+    height: 560px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 186px;
+    
+    
+
+ }
+
+ .hero-heading{
+    
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 61px;
+    letter-spacing: 0%;
+    text-align: left;
+    
+    margin: 24px 0px;
+ }
+ .hero-content{
+    color: rgb(17, 17, 17);
+    margin: 24px 0px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+ }
+ .hero-btn{
+    border-radius: 12px;
+
+/* Black */
+    background: rgb(17, 17, 17);
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 24px 0px;
+    width: 197px;
+    height: 50px;
+    gap: 10;
+    padding: 10px;
+ }
+ .hero-span{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+ }
+ .hero-img{
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 100px;
+    width: 468.61px;
+    height: 575px;
+   
+ }
+ .Empowering{
+    color: rgb(254, 163, 1);
+ }
+ .towards{
+    color:rgb(1, 172, 253);
+ }
   
+
+
+
+
+ @media (max-width: 576px) {
+   .ul-container, .nav-heading{
+    display: none;
+
+
+   }
+   .humbuger{
+    display: flex;
+    width: 50px;
+
+   }
+
+   .btn{
+    display: none;
+   }
+   
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    gap: 10;
+    border-bottom: 1px solid orange;
+    
+    
+  }
+   .logo-container{
+    margin: 0px;
+   }
+   .hero-section{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    
+
+   }
+   .hero-heading{
+    align-items: center;
+   }
+   .hero-img{
+    width: 336.58px;
+    height: 413px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 50px 0px;
+   }
+ }
+
